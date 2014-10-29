@@ -37,7 +37,9 @@ class SuperDupelineCommand(sublime_plugin.TextCommand):
 
         def on_done(index):
             if index >= 0:
-				self.view.insert(self.daedit, self.view.sel()[0].begin(), items[index].lstrip())
+                string = items[index].lstrip()
+                self.view.insert(self.daedit, self.view.sel()[0].begin(), string)
+                sublime.set_clipboard(string)
 
         if int(sublime.version()) > 3000:
             self.view.window().show_quick_panel(items, on_done, sublime.MONOSPACE_FONT, -1, on_done)
