@@ -1,0 +1,11 @@
+[
+    {
+        "keys": ["super+k", "super+d"],
+        "command": "super_dupeline"
+    },
+    {
+        "keys": ["super+k", "super+f"],
+        "command": "super_dupeline",
+        "args": { "allTabs": true }
+    }
+]

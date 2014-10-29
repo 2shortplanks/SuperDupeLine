@@ -1,0 +1,11 @@
+[
+    {
+        "caption": "SuperDupeLine: Super Dupe Line",
+        "command": "super_dupeline"
+    },
+    {
+        "caption": "SuperDupeLine: Super Dupe Line from all tabs",
+        "command": "super_dupeline",
+        "args": { "allTabs": true }
+    }
+]
